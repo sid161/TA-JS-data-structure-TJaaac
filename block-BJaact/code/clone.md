@@ -10,12 +10,12 @@ let person2 = person;
 
 person.firstName = 'Arya';
 
-console.log(person2.firstName); // output
-console.log(person.firstName); // output
-console.log(person.lastName); // output
-console.log(person == person2); // output
-console.log(person === person2); // output
-console.log(person.lastName === person2.lastName); // output
+console.log(person2.firstName); /Arya person2 primitive
+console.log(person.firstName); /Arya
+console.log(person.lastName); /Doe
+console.log(person == person2); /true same adress
+console.log(person === person2); / true
+console.log(person.lastName === person2.lastName); / true
 ```
 
 2. Write the output with reason:
@@ -37,17 +37,17 @@ let personTwo = { ...person };
 person.firstName = 'Arya';
 person.city = 'Navada';
 
-console.log(personTwo.firstName); // output
-console.log(person.firstName); // output
-console.log(personTwo.lastName); // output
-console.log(person.firstName === personTwo.firstName); // output
-console.log(person == personTwo); // output
-console.log(person === personTwo); // output
-console.log(person.address === personTwo.address); // output
-console.log(person.address == personTwo.address); // output
-console.log(personTwo.address.city); // output
-console.log(person.address.city); // output
-console.log(person.address.city == personTwo.address.city); // output
+console.log(personTwo.firstName); /Arya
+console.log(person.firstName); / Arya
+console.log(personTwo.lastName); /Doe
+console.log(person.firstName === personTwo.firstName); /True
+console.log(person == personTwo); / true
+console.log(person === personTwo); / true
+console.log(person.address === personTwo.address); /true
+console.log(person.address == personTwo.address); / true
+console.log(personTwo.address.city); /Navada
+console.log(person.address.city); /Navada
+console.log(person.address.city == personTwo.address.city); /true
 ```
 
 3. Write the output with reason:
@@ -104,6 +104,7 @@ let blogs = [
 ];
 
 // Your code goes here
+let clonedBlogs = [...blogs];
 ```
 
 5. Clone the `question` variable into a new variable named `questionClone`
